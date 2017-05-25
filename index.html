@@ -1,0 +1,10 @@
+<script>
+    Array
+        .from([...Array(100).keys()], (val, i) => ++i) // [1, 100]
+        .forEach(val => {
+            if (val % 15 === 0) console.log('FizzBuzz')  // Multiples of 3 and 5. (15, 30, ...)
+            else if (val % 3 === 0) console.log('Fizz')  // Multiples of 3 (3, 6, 9, 12)
+            else if (val % 5 === 0) console.log('Buzz')  // Multiples of 5 (5, 15, 20, 25)
+            else console.log(val) // Anything else
+        });
+</script>
